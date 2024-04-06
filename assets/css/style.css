@@ -11984,14 +11984,26 @@ h2, .h2 {
 
 .carousel-control-next,
 .carousel-control-prev {
-  width: 15;
-  height: 15;
+  width: 5%;
+}
+
+.carousel-control-next-icon {
+  margin-right: -50%;
+}
+
+.carousel-control-prev-icon {
+  margin-left: -50%;
+}
+
+.carousel-control-next:hover,
+.carousel-control-prev:hover {
+  background-color: rgba(255, 255, 255, 0.247);
 }
 
 .carousel-inner .zoom:hover {
   cursor: pointer;
   transform: scale(1.2);
-  box-shadow: 0px 20px 16px 16px rgba(255, 255, 255, 0.963);
+  box-shadow: 0px 0px 16px 16px rgba(255, 255, 255, 0.963);
   transition: transform 0.7s;
 }
 
@@ -12126,6 +12138,15 @@ footer a:hover {
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
 
+.label {
+  font-size: 22px;
+  display: inline-flex;
+  align-items: center;
+  margin-top: 80px;
+  margin-bottom: 170px;
+  cursor: pointer;
+}
+
 .container-settings {
   margin-inline: auto;
 }
@@ -12134,6 +12155,8 @@ footer a:hover {
   text-decoration: none;
 }
 
-.navbar-toggler {
-  z-index: 10;
+.bigBoxAccount h3, .bigBoxAccount .h3 {
+  font-size: 18px;
+  opacity: 0.6;
+  font-weight: 500;
 }/*# sourceMappingURL=style.css.map */

@@ -10,9 +10,9 @@
     />
     <link rel="stylesheet" href="./assets/dist/css/style.min.css" />
   </head>
-  <body class="bigBoxAccount bg-dark">
-    <header class="w-100">
-      <nav class="navbar navbar-expand-lg navbar-dark py-0">
+  <body class="container bigBoxAccount bg-dark">
+    <header>
+      <nav class="navbar navbar-expand-lg navbar-dark">
         <a class="logo" href="index.html">
           <img
             src="./assets/img/netflix_logo.png"
@@ -189,7 +189,7 @@
       </nav>
     </header>
 
-    <main class="container p-4 container-settings bg-white">
+    <main class="container p-4 w-75 container-settings bg-white">
       <h1>Account</h1>
       <hr />
       <div class="d-flex gap-3">
@@ -199,19 +199,19 @@
         </div>
         <div class="w-75">
           <div class="d-flex justify-content-between">
-            <p>student@strive.school</p>
+            <p class="fw-bold">student@strive.school</p>
             <a href="#">Change account email</a>
           </div>
           <div class="d-flex justify-content-between">
-            <p>password: ********</p>
+            <p class="opacity-50">Password: ********</p>
             <a href="#">Change password</a>
           </div>
           <div class="d-flex justify-content-between">
-            <p>Phone: 321 044 1279</p>
+            <p class="fw-bold">Phone: 321 044 1279</p>
             <a href="#">Change phone number</a>
           </div>
           <hr />
-          <div class="d-flex justify-content-between">
+          <div class="d-flex justify-content-between flex-wrap">
             <img
               src="https://www.avvisopubblico.it/home/wp-content/uploads/2022/06/paypal_puls.png"
               alt="paypal"
@@ -234,11 +234,11 @@
         </div>
       </div>
       <hr />
-      <div class="d-flex gap-3">
+      <div class="d-flex">
         <h3 class="w-25">PLAN DETAILS</h3>
         <div class="d-flex justify-content-between w-75">
-          <p>
-            premium
+          <p class="fw-bold">
+            Premium
             <img
               src="https://vath.co/wp-content/uploads/2019/03/Ultra_HD_Sticker_10_x_40mm_WEB.jpg"
               alt="fullhd"
@@ -253,7 +253,7 @@
       <hr />
       <div class="row settings flex-column flex-md-row">
         <div class="col-3">
-          <h3>Settings</h3>
+          <h3>SETTINGS</h3>
         </div>
         <div class="col-9">
           <a href="#">Parental controls</a><br />
@@ -266,30 +266,30 @@
       </div>
       <hr />
 
-      <div class="row d-flex flex-column flex-md-row">
-        <div class="col w-25">
+      <div class="d-flex flex-column flex-md-row">
+        <div class="w-25">
           <h3>My profile</h3>
         </div>
-        <div class="w-75 d-flex justify-content-between">
-          <div class="d-flex flex-column col-md-3">
-            <div class="flex-column flex-md-row mb-3">
+        <div class="w-75 d-sm-flex justify-content-between">
+          <div class="col col-12 d-flex flex-column col-sm-3">
+            <div class="flex-column flex-sm-row mb-3">
               <img
                 src="./assets/img/avatar.png"
                 width="36"
                 height="36"
                 alt="Your avatar image"
               />
-              <span>Strive Student</span>
+              <span class="fw-bold">Strive Student</span>
             </div>
             <a href="#">Language</a>
             <a href="#">Payback settings</a>
             <a href="#">Subtitle appearance</a>
           </div>
-          <div class="col d-flex flex-column col-md-2">
+          <div class="col col-12 d-flex flex-column col-sm-2">
             <a href="#">Viewing activity</a>
             <a href="#">Ratings</a>
           </div>
-          <div class="col d-flex flex-column col-md-3">
+          <div class="col col-12 col-sm-3 text-sm-end">
             <a href="#">Manage profiles</a><br />
             <a href="#">Add profile email</a>
           </div>
