@@ -11964,6 +11964,13 @@ textarea.form-control-lg {
   font-family: "Roboto", sans-serif;
 }
 
+h2, .h2 {
+  font-size: 26px;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: 550;
+}
+
 .dropdown-menu .dropdown-item {
   color: white;
   opacity: 0.6;
@@ -11975,31 +11982,22 @@ textarea.form-control-lg {
   transition: color 0.3s;
 }
 
-.carousel-control-prev-icon {
-  margin-left: -170%;
-}
-
-.carousel-control-next {
-  width: 32px;
-}
-
+.carousel-control-next,
 .carousel-control-prev {
-  width: 32px;
-}
-
-.carousel-control-next-icon {
-  margin-right: -170%;
+  width: 15;
+  height: 15;
 }
 
 .carousel-inner .zoom:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: transform 0.8s;
+  box-shadow: 0px 20px 16px 16px rgba(255, 255, 255, 0.963);
+  transition: transform 0.7s;
 }
 
 @media screen and (min-width: 576px) and (max-width: 1540px) {
   .carousel-inner {
-    width: 1500px;
+    width: 1300px;
   }
 }
 .hero {
@@ -12010,21 +12008,9 @@ textarea.form-control-lg {
   font-weight: 600;
 }
 
-.secondoCarosello,
-.terzoCarosello {
+.sectionTwo,
+.sectionThree {
   margin-top: 1.5rem;
-}
-
-.container .carousel .zoom {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-h2, .h2 {
-  font-size: 26px;
-  padding-bottom: 0.5rem;
-  color: white;
-  font-weight: 550;
 }
 
 footer {
@@ -12084,6 +12070,7 @@ footer a:hover {
   display: flex;
   gap: 5%;
   font-size: 1rem;
+  padding-bottom: 6rem;
 }
 
 .buttons button {
@@ -12145,4 +12132,8 @@ footer a:hover {
 
 .bigBoxAccount a {
   text-decoration: none;
+}
+
+.navbar-toggler {
+  z-index: 10;
 }/*# sourceMappingURL=style.css.map */

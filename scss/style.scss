@@ -1,7 +1,15 @@
-@import "./partials/bootstrap-overrides";
+@import "./partials/_bootstrap-overrides";
 * {
   font-family: "Roboto", sans-serif;
 }
+
+h2 {
+  font-size: 26px;
+  padding-bottom: 0.5rem;
+  color: white;
+  font-weight: 550;
+}
+
 .dropdown-menu .dropdown-item {
   color: white;
   opacity: 0.6;
@@ -11,28 +19,21 @@
   opacity: 0.8;
   transition: color 0.3s;
 }
-// provo, con questa scelta, a rendere più visibili le frecce per far scorrere il carosello.
-// Potrebbe non essere esteticamente valida ma ci ho voluto provare lo stesso
-.carousel-control-prev-icon {
-  margin-left: -170%;
-}
-.carousel-control-next {
-  width: 32px;
-}
+.carousel-control-next,
 .carousel-control-prev {
-  width: 32px;
+  width: 15;
+  height: 15;
 }
-.carousel-control-next-icon {
-  margin-right: -170%;
-}
+
 .carousel-inner .zoom:hover {
   cursor: pointer;
   transform: scale(1.2);
-  transition: transform 0.8s;
+  box-shadow: 0px 20px 16px 16px rgba(255, 255, 255, 0.963);
+  transition: transform 0.7s;
 }
 @media screen and (min-width: 576px) and (max-width: 1540px) {
   .carousel-inner {
-    width: 1500px;
+    width: 1300px;
   }
 }
 
@@ -43,18 +44,9 @@
     font-weight: 600;
   }
 }
-.secondoCarosello,
-.terzoCarosello {
+.sectionTwo,
+.sectionThree {
   margin-top: 1.5rem;
-}
-.container .carousel .zoom {
-  width: max-content;
-}
-h2 {
-  font-size: 26px;
-  padding-bottom: 0.5rem;
-  color: white;
-  font-weight: 550;
 }
 
 footer {
@@ -108,6 +100,7 @@ footer a:hover {
   display: flex;
   gap: 5%;
   font-size: 1rem;
+  padding-bottom: 6rem;
 }
 .buttons button {
   background-color: white;
@@ -155,6 +148,7 @@ footer a:hover {
   opacity: 0.9;
   box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.5);
 }
+
 // ACCOUNT PAGE
 
 .container-settings {
@@ -162,4 +156,7 @@ footer a:hover {
 }
 .bigBoxAccount a {
   text-decoration: none;
+}
+.navbar-toggler {
+  z-index: 10;
 }
